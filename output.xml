@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.5 on win32)" generated="2025-09-09T22:02:49.420055" rpa="false" schemaversion="5">
+<suite id="s1" name="Test case" source="c:\Users\Pontida.s\Downloads\Test Bull VPN Order\test_case\Test_case.robot">
+<test id="s1-t1" name="TC-ACC-002 Registered account can proceed" line="19">
+<kw name="login" owner="login_keyword">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-09T22:02:49.749396" level="INFO">Opening browser 'chrome' to base url 'https://www.bullvpn.com/login'.</msg>
+<arg>https://www.bullvpn.com/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-09T22:02:49.748395" elapsed="4.091373"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-09T22:02:53.842765" level="INFO">Typing text 'Pontida' into text field '//input[@id="username"]'.</msg>
+<arg>${username_lc}</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-09T22:02:53.840765" elapsed="0.098993"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-09-09T22:02:53.940758" level="INFO">Typing password into text field '//input[@id="password"]'.</msg>
+<msg time="2025-09-09T22:02:53.963840" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${password_lc}</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-09T22:02:53.939758" elapsed="0.072244"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-09T22:02:56.013635" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-09T22:02:54.013001" elapsed="2.001085"/>
+</kw>
+<kw name="Wait_Click" owner="login_keyword">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-09T22:02:56.015201" elapsed="0.025345"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-09-09T22:02:56.040546" elapsed="0.022334"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-09T22:02:56.064434" level="INFO">Clicking element '//button[contains(text(),'AGREE')]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-09T22:02:56.063900" elapsed="0.090678"/>
+</kw>
+<arg>${Agree_btn}</arg>
+<status status="PASS" start="2025-09-09T22:02:56.014086" elapsed="0.140492"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${Affiliate_Program_text_lc}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-09-09T22:02:56.154578" elapsed="0.299000"/>
+</kw>
+<kw name="Wait_Click" owner="login_keyword">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-09T22:02:56.454581" elapsed="0.018510"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-09-09T22:02:56.473091" elapsed="0.023891"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-09T22:02:56.496982" level="INFO">Clicking element '//button[@id="btn-submit-login"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-09T22:02:56.496982" elapsed="0.071135"/>
+</kw>
+<arg>${login_btn_lc}</arg>
+<status status="PASS" start="2025-09-09T22:02:56.453578" elapsed="0.114539"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-09T22:02:58.569299" level="INFO">Slept 2 seconds.</msg>
+<arg>2 s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-09T22:02:56.569116" elapsed="2.000183"/>
+</kw>
+<status status="PASS" start="2025-09-09T22:02:49.747396" elapsed="8.821903"/>
+</kw>
+<kw name="Click Order Tab" owner="order_keyword">
+<kw name="Wait_Click" owner="login_keyword">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-09T22:02:58.571347" elapsed="0.045316"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-09-09T22:02:58.616663" elapsed="0.027658"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-09T22:02:58.645320" level="INFO">Clicking element '//li//a[contains(text(),'Order') and contains(@class, 'nav-link')]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-09T22:02:58.644321" elapsed="0.821013"/>
+</kw>
+<arg>${Order_tab_lc}</arg>
+<status status="PASS" start="2025-09-09T22:02:58.570315" elapsed="0.895019"/>
+</kw>
+<status status="PASS" start="2025-09-09T22:02:58.570315" elapsed="0.895019"/>
+</kw>
+<kw name="Select Plan 1 month" owner="order_keyword">
+<kw name="Scroll_Click" owner="order_keyword">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-09-09T22:02:59.467339" elapsed="0.282647"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-09T22:02:59.749986" elapsed="0.022667"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-09-09T22:02:59.773810" elapsed="0.040704"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-09T22:02:59.815514" level="INFO">Clicking element '//label[@id="price-item-4"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-09T22:02:59.814514" elapsed="0.068521"/>
+</kw>
+<arg>${1month_lc}</arg>
+<status status="PASS" start="2025-09-09T22:02:59.467339" elapsed="0.416697"/>
+</kw>
+<status status="PASS" start="2025-09-09T22:02:59.466341" elapsed="0.417695"/>
+</kw>
+<kw name="Validate Total amount 1 month" owner="order_keyword">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-09T22:02:59.914061" level="INFO">${Total_amount_2} = 249 THB</msg>
+<var>${Total_amount_2}</var>
+<arg>${Total_amount_lc}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-09T22:02:59.885036" elapsed="0.029025"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${Total_amount_2}&quot; == &quot;${Total_amount}&quot;">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Price is valid</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-09T22:02:59.915063" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-09-09T22:02:59.915063" elapsed="0.001372"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Price is not valid</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-09-09T22:02:59.916435" elapsed="0.001012"/>
+</kw>
+<status status="NOT RUN" start="2025-09-09T22:02:59.916435" elapsed="0.001012"/>
+</branch>
+<status status="PASS" start="2025-09-09T22:02:59.915063" elapsed="0.002384"/>
+</if>
+<status status="PASS" start="2025-09-09T22:02:59.884036" elapsed="0.033411"/>
+</kw>
+<kw name="Select Credit for payment" owner="order_keyword">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-09T22:03:01.919220" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-09T22:02:59.918874" elapsed="2.000346"/>
+</kw>
+<kw name="Scroll_Click" owner="order_keyword">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-09-09T22:03:01.920595" elapsed="0.270828"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-09T22:03:02.191423" elapsed="0.012001"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-09-09T22:03:02.203424" elapsed="0.016173"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-09T22:03:02.220601" level="INFO">Clicking element '(//img[@alt="Credit Card/Debit Card"])[1]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-09T22:03:02.220601" elapsed="0.061077"/>
+</kw>
+<arg>${credit_debit_lc}</arg>
+<status status="PASS" start="2025-09-09T22:03:01.919220" elapsed="0.362458"/>
+</kw>
+<status status="PASS" start="2025-09-09T22:02:59.917447" elapsed="2.365239"/>
+</kw>
+<kw name="Click Buy" owner="order_keyword">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-09T22:03:04.284140" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-09T22:03:02.283686" elapsed="2.000454"/>
+</kw>
+<kw name="Scroll_Click" owner="order_keyword">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-09-09T22:03:04.286161" elapsed="0.283887"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-09T22:03:04.571046" elapsed="0.013551"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-09-09T22:03:04.584597" elapsed="0.018185"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-09T22:03:04.603964" level="INFO">Clicking element '//button[contains(text(),'Buy Now')]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-09T22:03:04.602782" elapsed="0.093700"/>
+</kw>
+<arg>${Buy_Now_lc}</arg>
+<status status="PASS" start="2025-09-09T22:03:04.285147" elapsed="0.411335"/>
+</kw>
+<status status="PASS" start="2025-09-09T22:03:02.282686" elapsed="2.413796"/>
+</kw>
+<msg time="2025-09-09T22:03:04.731672" level="INFO">Starting Browser process C:\Users\Pontida.s\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js using port 51173</msg>
+<msg time="2025-09-09T22:03:04.732692" level="INFO">Node startup parameters: ['node', 'C:\\Users\\Pontida.s\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js', '51173']</msg>
+<status status="PASS" start="2025-09-09T22:02:49.747396" elapsed="14.950085"/>
+</test>
+<status status="PASS" start="2025-09-09T22:02:49.425197" elapsed="16.385971"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test case" id="s1" pass="1" fail="0" skip="0">Test case</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
